@@ -4,6 +4,8 @@ import logo from '../assets/logo.png';
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles'
 import { KeyboardArrowDown, NotificationAddOutlined,Search } from "@mui/icons-material";
+import Appbar from '../Appbar/Appbar';
+import Layout from '../Layout/Layout';
 
 const SearchBar = styled(TextField)({
     marginTop:'11px',
@@ -70,9 +72,8 @@ function Navbar(){
     <KeyboardArrowDown sx={{color:'white',marginTop:'13.5px',marginRight:'16.5px'}} />
     </Stack>
     </Stack>
-        </Box>
-      
-        
+    <Layout/>
+        </Box>        
         </>
     )
 }
